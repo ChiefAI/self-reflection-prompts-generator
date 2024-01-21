@@ -1,0 +1,195 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Set your preferred background color */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #00BF63;
+    font-size: 50px;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+.subheader {
+    margin-top: 10px; /* Adjust margin */
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.0;
+    text-shadow: none; /* Remove text shadow */
+}
+
+#emailFormContainer {
+    margin-top: 20px;
+}
+
+#emailForm {
+    max-width: 600px; /* Set your preferred maximum width */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 500px; /* Adjust the width as needed */
+    margin-bottom: 15px;
+}
+
+#name,
+#email {
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for a clean look */
+    border-radius: 5px;
+}
+
+#name::placeholder,
+#email::placeholder {
+    color: #888;
+}
+
+#emailForm button {
+    margin-top: 20px;
+    background-color: #00BF63;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px; /* Larger padding */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 500px; /* Adjust the width as needed */
+}
+
+#emailForm button:hover {
+    background-color: #007B3E; /* Darker shade on hover, adjust as needed */
+}
+
+#promptsContainer {
+    display: none; /* Hide the prompts container initially */
+    margin-top: 20px;
+}
+
+.benefits-section {
+    margin-top: 30px;
+}
+
+.benefits-section ol {
+    list-style-type: none;
+    counter-reset: benefits-counter;
+    padding-left: 0;
+    text-align: left; /* Align text to the left */
+}
+
+.benefits-section .benefits-text {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.benefits-section ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits-section li {
+    display: inline; /* Display list items inline to avoid bullet points */
+    margin-right: 10px; /* Add spacing between items */
+}
+
+
+#generateBtn:hover {
+    background-color: #007B3E;
+}
+
+
+.generated-prompt {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Set your preferred text color */
+    background-color: #fff; /* Set your preferred background color */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 750px; /* Set your preferred maximum width */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(239, 238, 238, 0.8); /* Transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.033); /* Light shadow */
+    margin-top: 100px; /* Adjust this value to move it further down */
+    text-shadow: none; /* Remove text shadow */
+}
+
+#select-prompt-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 40px; /* Adjust margin if needed */
+    font-weight: bold; /* Make it bold */
+    font-size: 18px; /* Increase font size */
+    text-shadow: none; /* Remove text shadow */
+}
+
+
+#promptCategory {
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px 0; /* Adjust top and bottom margins */
+}
+
+#generateBtn {
+    margin-top: 20px;
+    background-color: #00BF63;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px; /* Larger padding */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 300px; /* Adjust the width as needed */
+}
+
+#promptCategory {
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px 0; /* Adjust top and bottom margins */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #555;
+    background-color: #fff;
+}
+
+#promptCategory:hover {
+    border-color: #00BF63; /* Change border color on hover */
+}
+
+#promptCategory:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #00BF63; /* Change border color on focus */
+}
+
+/* Styling the dropdown arrow */
+#promptCategory::after {
+    content: "\25BC"; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
