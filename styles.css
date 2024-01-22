@@ -23,22 +23,6 @@ h1 {
     text-shadow: none; /* Remove text shadow */
 }
 
-#emailFormContainer {
-    margin-top: 20px;
-}
-
-#emailForm {
-    max-width: 600px; /* Set your preferred maximum width */
-    margin: 0 auto; /* Center the form horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
-}
-
 .input-group {
     display: flex;
     flex-direction: column;
@@ -46,66 +30,12 @@ h1 {
     margin-bottom: 15px;
 }
 
-#name,
-#email {
-    padding: 20px;
-    border: 1px solid #ccc; /* Border for a clean look */
-    border-radius: 5px;
-}
 
-#name::placeholder,
-#email::placeholder {
-    color: #888;
-}
-
-#emailForm button {
-    margin-top: 20px;
-    background-color: #00BF63;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px; /* Larger padding */
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    width: 500px; /* Adjust the width as needed */
-}
-
-#emailForm button:hover {
-    background-color: #007B3E; /* Darker shade on hover, adjust as needed */
-}
 
 #promptsContainer {
     display: none; /* Hide the prompts container initially */
     margin-top: 20px;
-}
-
-.benefits-section {
-    margin-top: 30px;
-}
-
-.benefits-section ol {
-    list-style-type: none;
-    counter-reset: benefits-counter;
-    padding-left: 0;
-    text-align: left; /* Align text to the left */
-}
-
-.benefits-section .benefits-text {
-    margin-top: 10px;
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.benefits-section ol {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.benefits-section li {
-    display: inline; /* Display list items inline to avoid bullet points */
-    margin-right: 10px; /* Add spacing between items */
+    display: block !important; /* Ensure that it's set to display: block */
 }
 
 
@@ -132,6 +62,7 @@ h1 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.033); /* Light shadow */
     margin-top: 100px; /* Adjust this value to move it further down */
     text-shadow: none; /* Remove text shadow */
+    
 }
 
 #select-prompt-category {
