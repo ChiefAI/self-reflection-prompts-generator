@@ -1328,12 +1328,14 @@ const promptsForDepression = [
 
 ]
 
-// Update the generatePrompt function
+
+ // Update the generatePrompt function
 function generatePrompt() {
     const promptDisplay = document.getElementById("promptDisplay");
     const category = document.getElementById("promptCategory").value;
 
     console.log("Selected Category:", category);
+    
 
     // Get prompts based on the selected category
     const categoryPrompts = getCategoryPrompts(category);
@@ -1343,14 +1345,16 @@ function generatePrompt() {
         const generatedPrompt = categoryPrompts[randomIndex];
 
         // Update prompt styling
-        promptDisplay.innerHTML = `<span class="generated-prompt">${generatedPrompt}</span>`;
+        promptDisplay.textContent = generatedPrompt; // Use textContent instead of innerHTML
+        promptDisplay.classList.add("generated-prompt"); // Apply the generated-prompt class
     } else {
         promptDisplay.textContent = "No prompts available for the selected category.";
+        promptDisplay.classList.remove("generated-prompt"); // Remove the class if no prompt is available
     }
 }
 
 
-
+// Rest of your JavaScript code...
 
 
 function getCategoryPrompts(category) {
@@ -1407,64 +1411,14 @@ function getCategoryPrompts(category) {
 }
 
 
-
-// Email Subscription
-const emailFormContainer = document.getElementById("emailFormContainer");
-const promptsContainer = document.getElementById("promptsContainer");
-
-function subscribe() {
-    const nameInput = document.getElementById("name").value;
-    const emailInput = document.getElementById("email").value;
-
-    // Check if valid name and email are entered
-    if (isValidName(nameInput) && isValidEmail(emailInput)) {
-        // Save the name and email or perform any necessary actions (e.g., send to a backend)
-        saveNameAndEmail(nameInput, emailInput);
-
-        // Hide the benefits section
-        const benefitsSection = document.querySelector(".benefits-section");
-        benefitsSection.style.display = "none";
-
-        // Hide the email form and display the prompts
-        emailFormContainer.style.display = "none";
-        promptsContainer.style.display = "block";
-
-        // Display the prompt category dropdown and "Generate Prompt" button
-        document.getElementById("select-prompt-category").style.display = "block";
-        document.getElementById("generateBtn").style.display = "inline-block";
-    } else {
-        alert("Please enter a valid name and email address.");
-    }
-}
-
-
-
-function isValidName(name) {
-    // Basic name validation (you can customize this based on your requirements)
-    return name.trim() !== "";
-}
-
-function isValidEmail(email) {
-    // Basic email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function saveNameAndEmail(name, email) {
-    // Placeholder function to save the name and email (replace with your logic)
-    console.log("Name and Email saved:", name, email);
-}
-
-// Rest of your JavaScript code...
-
-
-document.getElementById("subscribe-button").addEventListener("click", function() {
+document.getElementById("generateBtn").addEventListener("click", function() {
     document.getElementById("select-prompt-category").style.display = "block";
-  });
+});
+
   
 
 // Show the prompt category dropdown when the subscribe button is clicked
-document.getElementById("subscribe-button").addEventListener("click", function() {
+document.getElementById("generateBtn").addEventListener("click", function() {
     document.getElementById("select-prompt-category").style.display = "block";
 });
 
@@ -1480,3 +1434,7 @@ document.getElementById("promptCategory").addEventListener("change", function() 
     // For example, you may want to update the prompt generation logic
     // based on the selected category
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+});
+
