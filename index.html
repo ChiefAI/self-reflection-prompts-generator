@@ -15,68 +15,51 @@
         <p class="subheader">
             Take a moment during your day to reflect on one or more of these thoughtful prompts
         </p>
-    
-        <!-- Step 1: Email Subscription Form -->
-        <div id="emailFormContainer">
-            <form id="emailForm" onsubmit="subscribe(); return false;">
-                <div class="input-group">
-                    <input type="text" id="name" required placeholder="Enter your name">
-                </div>
-    
-                <div class="input-group">
-                    <input type="email" id="email" required placeholder="Enter your email">
-                </div>
-    
-                <button type="submit" id="subscribeBtn">Subscribe</button>
-            </form>
-        </div>
-    
+
         <!-- Step 3: Prompt Category Dropdown -->
-        <div class="input-group" id="select-prompt-category" style="display:none;">
+        <div class="input-group" id="select-prompt-category">
             <label for="promptCategory">Select Prompt Category:</label>
             <select id="promptCategory">
-        <option value="generic">Generic Prompts</option>
-        <option value="anger">Prompts for Anger</option>
-        <option value="emotionalHealing">Prompts for Emotional Healing</option>
-        <option value="therapy">Prompts for Therapy</option>
-        <option value="mindfulness">Prompts for Mindfulness</option>
-        <option value="trauma healing">Prompts for Trauma Healing</option>
-        <option value="gratitude">Prompts for Gratitude</option>
-        <option value="confidence">Prompts for Confidence</option>
-        <option value="healinginnerchild">Prompts for Healing Inner Child</option>
-        <option value="overthinking">Prompts for Overthinking</option>
-        <option value="self-care">Prompts for Self Care</option>
-        <option value="anxious attachment">Prompts for Anxious Attachment</option>
-        <option value="toxic relationships">Prompts for Toxic Relationships</option>
-        <option value="personal growth">Prompts for Personal Growth</option>
-        <option value="spiritual growth">Prompts for Spiritual Growth</option>
-        <option value="stress and anxiety">Prompts for Stress and Anxiety</option>
-        <option value="figure out what you want">Prompts to Figure Out What You Want</option>
-        <option value="when you feel lost">Prompts for When You Feel Lost</option>
-        <option value="mental health">Prompts for Mental Health</option>
-        <option value="self esteem">Prompts for Self-Esteem</option>
-        <option value="beginners">Prompts for Beginners</option>
-        <option value="grief">Prompts for Grief</option>
-        <option value="depression">Prompts for Depression</option>
-       
-    </select>
-    <button id="generateBtn" onclick="generatePrompt()">Generate Prompt</button>
-</div>
+                <option value="generic">Generic Prompts</option>
+                <option value="anger">Prompts for Anger</option>
+                <option value="emotionalHealing">Prompts for Emotional Healing</option>
+                <option value="therapy">Prompts for Therapy</option>
+                <option value="mindfulness">Prompts for Mindfulness</option>
+                <option value="trauma healing">Prompts for Trauma Healing</option>
+                <option value="gratitude">Prompts for Gratitude</option>
+                <option value="confidence">Prompts for Confidence</option>
+                <option value="healinginnerchild">Prompts for Healing Inner Child</option>
+                <option value="overthinking">Prompts for Overthinking</option>
+                <option value="self-care">Prompts for Self Care</option>
+                <option value="anxious attachment">Prompts for Anxious Attachment</option>
+                <option value="toxic relationships">Prompts for Toxic Relationships</option>
+                <option value="personal growth">Prompts for Personal Growth</option>
+                <option value="spiritual growth">Prompts for Spiritual Growth</option>
+                <option value="stress and anxiety">Prompts for Stress and Anxiety</option>
+                <option value="figure out what you want">Prompts to Figure Out What You Want</option>
+                <option value="when you feel lost">Prompts for When You Feel Lost</option>
+                <option value="mental health">Prompts for Mental Health</option>
+                <option value="self esteem">Prompts for Self-Esteem</option>
+                <option value="beginners">Prompts for Beginners</option>
+                <option value="grief">Prompts for Grief</option>
+                <option value="depression">Prompts for Depression</option>
+               
+            </select>
+            <button id="generateBtn" onclick="generatePrompt()">Generate Prompt</button>
+        </div>
+            
 
-<!-- Step 2: Prompts Display -->
-<div id="promptsContainer" style="display:none;">
-    <div id="promptDisplayContainer">
-        <p id="promptDisplay"></p>
+        <!-- Step 2: Prompts Display -->
+        <div id="promptsContainer" style="display:none;">
+            <div id="promptDisplayContainer">
+                <p id="promptDisplay"></p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
     </div>
-</div>
-
-<!-- Benefits Section -->
-<div class="benefits-section">
-    <li>Immediate access to "Self-reflection Prompts Generator"</li>
-</div>
-
-<script src="script.js"></script>
-</div>
 </body>
 </html>
+
 
