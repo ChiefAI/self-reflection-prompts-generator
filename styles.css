@@ -7,6 +7,8 @@ body {
 
 .container {
     text-align: center;
+    padding: 0 10px; /* Add padding to the container for better mobile layout */
+
 }
 
 h1 {
@@ -18,16 +20,18 @@ h1 {
 .subheader {
     margin-top: 10px; /* Adjust margin */
     color: #000000;
-    font-size: 20px;
-    line-height: 1.0;
+    font-size: 16px; /* Reduce font size for better readability on mobile */
+    line-height: 1.5;
     text-shadow: none; /* Remove text shadow */
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    width: 500px; /* Adjust the width as needed */
-    margin-bottom: 15px;
+    width: 100%; /* Adjust width to fit the screen */
+    max-width: 400px; /* Limit maximum width for better mobile layout */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Add padding for better spacing on mobile */
 }
 
 
@@ -45,7 +49,7 @@ h1 {
 
 
 .generated-prompt {
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 16px; /* Adjust font size as needed */
     font-weight: bold;
     color: #000000; /* Set your preferred text color */
     background-color: #fff; /* Set your preferred background color */
@@ -70,9 +74,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin: 0 auto; /* Center horizontally */
-    margin-top: 40px; /* Adjust margin if needed */
+    margin-top: 20px; /* Adjust margin if needed */
     font-weight: bold; /* Make it bold */
-    font-size: 18px; /* Increase font size */
+    font-size: 16px; /* Increase font size */
     text-shadow: none; /* Remove text shadow */
 }
 
@@ -80,13 +84,19 @@ h1 {
 #promptCategory {
     width: 300px; /* Adjust the width as needed */
     margin: 10px 0; /* Adjust top and bottom margins */
+    width: 100%; /* Adjust width to fit the screen */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #generateBtn {
     margin-top: 20px;
     background-color: #00BF63;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 20px; /* Larger padding */
     cursor: pointer;
     border: none;
@@ -123,4 +133,17 @@ h1 {
     transform: translateY(-50%);
     color: #555;
     pointer-events: none;
+
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    header, footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Optional: Center text within flex container */
+    }
 }
+
+}
+
