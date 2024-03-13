@@ -149,4 +149,38 @@ h1 {
     }
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Adjust the font size for mobile */
+    }
+
+    .subheader {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 8px; /* Adjust top margin */
+    }
+
+    .input-group {
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    #generateBtn {
+        width: 100%; /* Make button full width */
+        margin-top: 10px; /* Adjust top margin */
+    }
+
+    #promptCategory {
+        width: calc(100% - 20px); /* Adjust width */
+    }
+
+    #promptCategory::after {
+        right: 5px; /* Adjust position */
+    }
+
+    .generated-prompt {
+        font-size: 14px; /* Adjust font size */
+        margin-top: 50px; /* Adjust margin top */
+    }
 }
+}
+
