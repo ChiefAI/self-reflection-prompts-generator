@@ -143,6 +143,10 @@ h1 {
         align-items: center;
         text-align: center; /* Optional: Center text within flex container */
     }
+
+    h1 {
+        font-size: 25px; /* Adjust the font size for mobile */
+    }
 }
 
 }
