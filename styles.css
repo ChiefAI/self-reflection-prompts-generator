@@ -8,7 +8,7 @@ body {
 .container {
     text-align: center;
     padding: 0 10px; /* Add padding to the container for better mobile layout */
-
+    
 }
 
 h1 {
@@ -84,12 +84,12 @@ h1 {
 #promptCategory {
     width: 300px; /* Adjust the width as needed */
     margin: 10px 0; /* Adjust top and bottom margins */
-    width: 100%; /* Adjust width to fit the screen */
-    margin: 10px 0;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #555;
+    background-color: #fff;
 }
 
 #generateBtn {
@@ -104,16 +104,6 @@ h1 {
     width: 300px; /* Adjust the width as needed */
 }
 
-#promptCategory {
-    width: 300px; /* Adjust the width as needed */
-    margin: 10px 0; /* Adjust top and bottom margins */
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #555;
-    background-color: #fff;
-}
 
 #promptCategory:hover {
     border-color: #00BF63; /* Change border color on hover */
@@ -135,24 +125,11 @@ h1 {
     pointer-events: none;
 
 
-/* Styles for mobile devices */
-@media (max-width: 768px) {
-    header, footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center; /* Optional: Center text within flex container */
-    }
-
-    h1 {
-        font-size: 25px; /* Adjust the font size for mobile */
-    }
-}
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 30px; /* Adjust the font size for mobile */
+        font-size: 15px; /* Adjust the font size for mobile */
     }
 
     .subheader {
@@ -167,6 +144,7 @@ h1 {
     #generateBtn {
         width: 100%; /* Make button full width */
         margin-top: 10px; /* Adjust top margin */
+        padding: 8px 15px;
     }
 
     #promptCategory {
@@ -181,6 +159,18 @@ h1 {
         font-size: 14px; /* Adjust font size */
         margin-top: 50px; /* Adjust margin top */
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Center everything vertically */
+        overflow-x: hidden; /* Prevent horizontal scrolling on mobile devices */
+    
+    }
+
 }
+
+
 }
 
